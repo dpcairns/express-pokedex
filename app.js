@@ -34,9 +34,7 @@ app.get(
 app.get('/pokemon', (req, res) => {
     // do some SQL stuff. 
     // go grab data from somewhere
-    // const data =await client.query('SELECT * FROM animals';
-
-    console.log('pokemon', pokemon);
+    // const data =await client.query('SELECT * FROM animals')
 
     res.json({ results: pokemon });
 });
@@ -44,7 +42,7 @@ app.get('/pokemon', (req, res) => {
 app.get('/pokemon/:id', (req, res) => {
     // do some SQL stuff. 
     // go grab data from somewhere
-    // const data =await client.query('SELECT * FROM animals';
+    // const data =await client.query('SELECT * FROM animals')
     const id = Number(req.params.id);
 
     const selectedPokemon = pokemon
